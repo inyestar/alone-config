@@ -2,6 +2,6 @@ spring.jpa.show-sql: true
 spring.datasource.driverClassName: "org.mariadb.jdbc.Driver"
 spring.datasource.url: "jdbc:mysql://192.168.1.19:3306/alone"
 spring.datasource.username: "inminhouse"
-spring.datasource.password: "1234"
+spring.datasource.password: "{cipher}AQA/+dO00BZmfsEN97ovOX6j9E27UqfsZD/+eH2y2jbt9rTmND9Tr7hQZY5p8KP9ZnzRNnxEzQdtfXQGP9zK2F6qqGEnWGxh5do45iKRFTpa2xsY2piTD0JDsuz6m4LinYmpkyQpw83VV9ipxWwyJlL801ccIkTae+KdMv5YR+JF+UvQjJxaa1/1ww+FUvod7dk7BhzaDid/BNvoAK+xTYM9MUwSvgePRIwi5ujF7OV59BIdHF3a8eIbIFlUWxcJLnS6mq3BrKfG4P3u32+gjQAc6CSbJwjuPh1LaIiE8nATuyT8TLl2UN50qQ7MC9H9uulvzgN89vh7R252Oj7si8xhFrD3QO822RE9knB5F598AjIJULeTo0Yf+EjAM9beSrE="
 spring.datasource.testWhileIdle: true
 spring.datasource.validationQuery: "SELECT 1"
