@@ -6,3 +6,15 @@ spring.datasource.username: "inminhouse"
 spring.datasource.password: "{cipher}AQA/+dO00BZmfsEN97ovOX6j9E27UqfsZD/+eH2y2jbt9rTmND9Tr7hQZY5p8KP9ZnzRNnxEzQdtfXQGP9zK2F6qqGEnWGxh5do45iKRFTpa2xsY2piTD0JDsuz6m4LinYmpkyQpw83VV9ipxWwyJlL801ccIkTae+KdMv5YR+JF+UvQjJxaa1/1ww+FUvod7dk7BhzaDid/BNvoAK+xTYM9MUwSvgePRIwi5ujF7OV59BIdHF3a8eIbIFlUWxcJLnS6mq3BrKfG4P3u32+gjQAc6CSbJwjuPh1LaIiE8nATuyT8TLl2UN50qQ7MC9H9uulvzgN89vh7R252Oj7si8xhFrD3QO822RE9knB5F598AjIJULeTo0Yf+EjAM9beSrE="
 spring.datasource.testWhileIdle: true
 spring.datasource.validationQuery: "SELECT 1"
+# 서비스 이름 대신 서비스 IP 주소 등록
+eureka.instance.preferIpAddress: true
+# 유레카 서비스에 등록
+eureka.client.registerWithEureka: true
+# 유레카 클라이언트가 레지스트리의 로컬 복사본을 가져오도록 지정
+# TRUE로 설정하면 검색할 때마다 유레카 서비스를 호출하지 않고 레지스트리가 로컬로 캐싱되며 30초 마다 변경사항 확인
+eureka.client.fetchRegistry: true
+# 클라이언트가 통신할 수 있는 유레카 서비스 목록만 제공함
+# TODO: 각 유레카 서비스는 클러스터의 다른 노드에 대해 알 수 있도록 구성,설정 되어야하므로 추가 설정 필요
+eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka/
+# ~/actuator/refresh 엔드포이트 노출
+# 사용자 정의 스프링 프로퍼티만 재로딩하며 스프링 데이터에서 정의된 구성(데이터베이스정보)는 재로딩 안됨
