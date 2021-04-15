@@ -18,3 +18,4 @@ eureka.client.fetchRegistry: true
 eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka/
 # ~/actuator/refresh 엔드포이트 노출
 # 사용자 정의 스프링 프로퍼티만 재로딩하며 스프링 데이터에서 정의된 구성(데이터베이스정보)는 재로딩 안됨
+inyestar.test.comment: "hihi"
