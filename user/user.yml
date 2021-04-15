@@ -6,3 +6,7 @@ spring.datasource.username: ${username}
 spring.datasource.password: ${password}
 spring.datasource.testWhileIdle: true
 spring.datasource.validationQuery: "SELECT 1"
+eureka.instance.preferIpAddress: true
+eureka.client.registerWithEureka: true
+eureka.client.fetchRegistry: true
+eureka.client.serviceUrl.defaultZone: "${EurekaUrl}"
